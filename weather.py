@@ -10,5 +10,7 @@ print (response.status_code)
 if response.status_code == 200:
     data=response.json()
     print (f"in {location}, the temperature is {data["current"] ["temp_c"]} degrees celcius, and the weather is {data ["current"] ["condition"] ["text"]} ")
+else:
+    print("Something went wrong")
 
 
